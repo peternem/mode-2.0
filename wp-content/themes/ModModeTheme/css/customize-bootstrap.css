@@ -131,6 +131,13 @@ body.page {
 }
 .page-header {
   border-bottom: none;
+  overflow: auto;
+}
+.entry-title {
+  height: auto;
+}
+.entry-title > a {
+  display: block;
 }
 .entry-content {
   height: auto;
