@@ -48,7 +48,16 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<header class="col-md-12 entry-header page-header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1 class="entry-title">
+						<?php 
+							if(get_field('logo_image'))
+							{
+								echo '<a href="'.get_field('vendor_url').'" target="_blank" ><img alt="'.get_the_title().'" class="img-responsive pull-left" src="'.get_field('logo_image').'"/></a>';
+							} else {
+								echo get_the_title();
+							}
+						?>
+					</h1>
 			</header><!-- .entry-header -->
 		</div>
 		<div class="row">
