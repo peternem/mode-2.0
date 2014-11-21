@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+.ui-resizable-handle { display: none !important; } 
+
+#modalBox, #modalBox1, .modal-dialog {
+	background-color:#ffffff;
+}
+
+.ui-dialog {
+	-webkit-box-shadow: 2px 2px 6px 2px #000000;
+	box-shadow: 2px 2px 6px 2px #000000; 
+}
+
+.ui-dialog .ui-dialog-title {
+    float: left;
+    margin: 0.1em 16px 0.1em 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0.4em 1em;
+    position: relative;
+	background-color:#493D3C;
+}
+
+.ui-dialog p {
+	color:#222222;
+}
+
+.ui-draggable, .ui-droppable {
+    background-position: left top;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 4px;
+}
+	
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+.ui-widget-header {
+    font-weight: bold;
+    margin: 2px;
+    color: #ADA49B;
+    font-weight: bold;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    height: 18px;
+    margin: -10px 0 0;
+    padding: 1px;
+    position: absolute;
+    right: 0.3em;
+    top: 50%;
+    width: 19px;
+}
+
+.ui-dialog .ui-dialog-content {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url("../themes/base/images/ui-icons_222222_256x240.png");
+}
+.ui-widget-content .ui-icon {
+    background-image: url("./themes/base/images/ui-icons_222222_256x240.png");
+}
+.ui-icon-closethick {
+    background-position: -96px -128px;
+}
+
+.ui-icon {
+    background-image: url("../themes/base/images/ui-icons_ffffff_256x240.png");
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px;
+}
+
+.ui-widget-content .ui-icon {
+    background-image: url("../themes/base/images/ui-icons_ffffff_256x240.png");
+}
+
+.ui-dialog .ui-resizable-se {
+    bottom: 3px;
+    height: 14px;
+    right: 3px;
+    width: 14px;
+}
+.ui-resizable-se {
+    bottom: 1px;
+    cursor: se-resize;
+    height: 12px;
+    right: 1px;
+    width: 12px;
+}
+.ui-resizable-handle {
+    display: block;
+    font-size: 0.1px;
+    position: absolute;
+}
+.ui-icon-grip-diagonal-se {
+    background-position: -80px -224px;
+}
+
+.ui-icon-gripsmall-diagonal-se {
+    background-position: -64px -224px;
+}
+
+
+.ui-widget-content {
+    background: url("../themes/base/images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #FFFFFF;
+    border: 1px solid #AAAAAA;
+    color: #222222;
+}
+
+.ui-widget {
+    font-family:  'Open Sans Condensed', Arial, Helvetica, sans-serif;
+	font-size:.80em;
+	font-style:normal;
+	letter-spacing:1px;
+}
+.ui-helper-clearfix:after {
+    clear: both;
+}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+}
+.ui-state-default .ui-icon {
+    background-image: url("../themes/base/images/ui-icons_888888_256x240.png");
+}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("../themes/base/images/ui-icons_ffd27a_256x240.png");
+}
+.ui-state-active .ui-icon {
+    background-image: url("../themes/base/images/ui-icons_454545_256x240.png");
+}
+
+.ui-widget-overlay {
+    background: url("../themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png") repeat-x scroll 50% 50% #AAAAAA;
+    opacity: 0.3;
+	filter: alpha(opacity=30);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.ui-button-text-only .ui-button-text {
+    padding: 0.4em 1em;
+}
+.ui-button .ui-button-text {
+    display: block;
+    line-height: 1.4;
+}
+
+.ui-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.1em;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+}
+

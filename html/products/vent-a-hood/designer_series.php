@@ -1,0 +1,4 @@
+<h3 class="h3TabContent">Designer Series Range Hoods</h3>
+<h4>Vent-A-Hood&reg; inserts gives you a number of options to meet your ventilation needs.</h4>
+<img src="images/vah/ISFH42-300x300.jpg" alt="Designer Series by Vent-A-Hood" class="imageFloat2" />
+<p>Our Designer Series combines gorgeous form with the great function that we're known for. Simply select the model you need, and then specify the finish (painted, stainless steel, polished brass, polished copper, hammered copper, antiqued copper, or antiqued hammered copper). Add decorative bands, lip treatment, or rails to make it a one-of-a-kind Vent A Hood for your kitchen. </p>

@@ -1,0 +1,743 @@
+/* --------------------------------------------------------------------
+  START - Embed font																	
+ -------------------------------------------------------------------- */
+@font-face {
+	font-family: 'walker';
+	font-weight:700;
+	src: url("../fonts/walkway_black-webfont.eot");
+}
+
+@font-face {
+	font-family:'walker';
+	font-weight:700;
+	src: url("../fonts/walkway_black-webfont.ttf");
+}
+/* --------------------------------------------------------------------
+  END - Embed  font	
+-------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------
+  START - CSS Reset																	
+ -------------------------------------------------------------------- */
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, header, nav, article, aside, footer, hgroup, section {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline:  0;
+	text-decoration: none;
+	vertical-align:middle;
+}
+:focus, :active {
+	outline: 0;
+}
+ol, ul {
+	list-style: none;
+}
+header, nav, article, aside, footer, hgroup, section {
+	display: block
+}
+.clearfloat {
+	margin:0 auto;
+	clear:both;
+	font-size: 1px;
+	height:0px;
+	width:100%;
+}
+/* --------------------------------------------------------------------
+  END - CSS Reset																	
+ -------------------------------------------------------------------- */
+ 
+body {
+	font-size:100%;
+	color: #000;
+	font-family:  Arial, Helvetica, sans-serif;
+	background-color: #161616;
+	margin-top:10px;
+}
+h1 {
+    color: #FFFFFF;
+    font-family: 'walker',Arial,Helvetica,sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 1px;}
+h2 {
+	font-family:  'walker', Arial, Helvetica, sans-serif;
+	font-size:.80em;
+	letter-spacing:1px;
+	color:#fff;
+}
+h3 {
+	color:#000;
+	font-size:.80em;
+	font-family:  'walker', Arial, Helvetica, sans-serif;
+}
+h4 {
+	color:#fff;
+	font-size:.80em;
+	font-family:  'walker', Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	letter-spacing: 2px;
+}
+h5 {
+	color:#fff;
+	font-size:.70em;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+hr {
+	margin:5px 10px 5px 10px;
+}
+p {
+    color: #FFFFFF;
+    font-family: 'Open Sans Regular',Arial,Helvetica,sans-serif;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    text-align: left;
+}
+li {
+	font-family:  Arial, Helvetica, sans-serif;
+	text-align:left;
+	color:#000000;
+}
+A {
+	text-decoration:none;
+	color: #FFFFFF;
+	font-weight:bold;
+	vertical-align: top;
+}
+A:hover {
+	color:#666666;
+}
+#wrapper {
+	background-color: #000000;
+    margin: 0 auto 10px;
+    width: 960px;
+}
+/******* LOADING *******/
+#popupLayer {
+	text-align: center;
+	visibility: hidden;
+	z-index: 7777;
+	position: fixed;
+	top:50%;
+	left: 50%;
+}
+/******* /LOADING *******/
+/*************************************************/
+/**** BEGIN - Header CSS - Site Wide ****/
+/*************************************************/
+header {
+    clear: both;
+    height: 100px !important;
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+}
+
+header h1 {
+	color:#fff;
+	width: 400px;
+}
+
+#quickLinks {
+    background-color: #444B50;
+    clear: both;
+    height: 30px !important;
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+}
+
+#quickLinks  #qLink {
+    overflow: auto;
+    padding: 7px 15px;
+}
+
+/*************************************************/
+/**** End - Header CSS - Site Wide ****/
+/*************************************************/
+
+
+
+/*************************************************/
+/**** Begin - Main Content CSS - Site Wide  #E6DEC8 ****/
+/*************************************************/
+
+#mainImage {
+	border-top: 4px solid #86929C;
+	background-color: #FFFFFF;
+    height: auto;
+    margin: 0 auto 20px;
+    overflow: auto;
+    width: 940px;
+}
+
+#mainImage > img {
+    float: right;
+    height: auto;
+    width: 500px;
+}
+
+#mainContentImage {
+	height: 600px;
+	overflow: hidden;
+	width: 955px;
+	background-color:#fff;
+	border-bottom:#E6DEC8 6px solid;
+	position:relative;
+}
+
+#mainImage #collectionContent, #mainContentImage #collectionContent {
+	position: absolute;
+	bottom:5px;
+	width:100%;
+	z-index:2;
+	margin:50px 0px 0px 0px;
+}
+.indexTitle_dlr {
+    float: left;
+    height: auto;
+    margin: 20px 0 0;
+    width: 403px;
+}
+
+.indexTitle_dlr h1, .indexTitle1 h1 {
+	color: #000;
+    margin: 3px 0 0 15px;
+}
+.indexTitle_dlr h2, .indexTitle1 h2 {
+	margin: 6px 10px 10px 20px;
+
+}
+.indexTitle_dlr h3, .indexTitle1 h3 {
+	color:#000;
+	font-size:.90em;
+	font-weight:normal;
+	line-height: 1.60em;
+	margin: 15px 20px 15px 20px;
+	width: auto;
+}
+.indexTitle_dlr p, .indexTitle1 p {
+    color: #000;
+    font-size: 0.75em;
+    margin: 10px 15px;
+    width: auto;
+}
+
+#wrapper #mainContent {
+	height: auto;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding-bottom: 10px;
+    width: 955px;
+}
+#mainContent h5 {
+	margin:20px 0px 5px 5px;
+}
+
+/**** Begin - Mode Product Modules/Box CSS Formating - Site Wide  - Collections pages ****/
+/*************************************************/
+
+#mainContent .box1 {
+	float:left;
+	width:277px;
+	height:250px;
+	padding:0px 20px 0px 20px;
+	margin:20px 0px 00px 0px;
+	border-right:#5A5E4D 1px dotted;
+	position:relative;
+}
+#mainContent .box2 {
+	float:left;
+	width:277px;
+	height:250px;
+	padding:0px 20px 0px 20px;
+	margin:20px 0px 0px 0px;
+	position:relative;
+}
+#mainContent .box3 {
+	border-left:#5A5E4D 1px dotted;
+	float:left;
+	clear:right;
+	width:277px;
+	height:250px;
+	padding: 0px 20px 0px 20px;
+	margin:20px 0px 0px 0px;
+	position:relative;
+}
+/*************************************************/
+/**** End - Mode Product Modules/Box CSS Formating - Site Wide ****/
+/*************************************************/
+
+/*************************************************/
+/**** Begin - glass Type Modules/Box CSS Formating - Site Wide  - Collections pages ****/
+/*************************************************/
+
+#mainContent .glass_type_box1 {
+	float:left;
+	width:277px;
+	height:270px;
+	padding:0px 20px 0px 20px;
+	margin:0px 0px 20px 0px;
+	border-right:#5A5E4D 1px dotted;
+	position:relative;
+}
+#mainContent .glass_type_box2 {
+	float:left;
+	width:277px;
+	height:270px;
+	padding:0px 20px 0px 20px;
+	margin:0px 0px 20px 0px;
+	position:relative;
+}
+#mainContent .glass_type_box3 {
+	border-left:#5A5E4D 1px dotted;
+	float:left;
+	clear:right;
+	width:277px;
+	height:270px;
+	padding: 0px 20px 0px 20px;
+	margin:00px 0px 20px 0px;
+	position:relative;
+}
+/*************************************************/
+/**** End - Mode glass Type Modules/Box CSS Formating - Site Wide ****/
+/*************************************************/
+
+
+/*************************************************/
+/**** Begin - Mode Dynamic Height Modules/Box CSS Formating - Site Wide - The Collections.php, Dealer-Tools.php ****/
+/*************************************************/
+
+#mainContent .dynamicHtbox1 {
+	background-color: #2E3336;
+    float: left;
+    margin: 20px 0 20px 10px;
+    min-height: 280px;
+    position: relative;
+    width: 300px;
+}
+#mainContent .dynamicHtbox2 {
+	background-color: #2E3336;
+    float: left;
+    margin: 20px;
+    min-height: 280px;
+    position: relative;
+    width: 300px;
+}
+#mainContent .dynamicHtbox3 {
+	background-color: #2E3336;
+    float: left;
+    margin: 20px 0 20px 0px;
+    min-height: 280px;
+    position: relative;
+    width: 300px;
+}
+/*************************************************/
+/**** End - Mode Dynamic Height Modules/Box CSS Formating - Site Wide - The Collections.php, Dealer-Tools.php ****/
+/*************************************************/
+
+/*************************************************/
+/**** Begin - MoreInfo Link CSS Formating - Site Wide - all pages ****/
+/*************************************************/
+.moreInfoDiv {
+	bottom: 0px;
+	margin: 0;
+	position: absolute;
+	text-align: right;
+	width: 280px;
+	z-index: 2;
+}
+.moreInfoLink {
+	width: 280px;
+	margin:0px 0px 0px 0px;
+	text-align:right;
+}
+.moreInfoLink span {
+	margin-left:5px;
+	margin-right:5px;
+	font-size: .70em;
+}
+/*************************************************/
+/**** End - MoreInfo Link CSS Formating - Site Wide - all pages ****/
+/*************************************************/
+
+#mainContent .formbox1 {
+	float: left;
+	height: auto;
+	margin: 20px 0;
+	padding: 0 20px 20px;
+	width: 436px;
+}
+#mainContent .formbox2 {
+	float:left;
+	clear:right;
+	height: auto;
+	width: 436px;
+	height:auto;
+	margin: 20px 0px;
+	padding:0px 20px 20px 20px;
+	border-left:#5A5E4D 1px dotted;
+}
+#mainContent .aboutbox1 {
+	background-color: #2E3336;
+    float: left;
+    height: auto;
+    margin: 0 0 20px 10px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 618px;
+}
+#mainContent .aboutbox2 {
+	background-color: #2E3336;
+    float: left;
+    height: auto;
+    margin: 0 0 0 20px;
+    position: relative;
+    width: 300px;
+}
+
+#mainContent .agContactInfo {
+	float:left;
+	clear:both;
+	height: auto;
+	margin: 0px 0px;
+}
+
+.agContactInfo li {
+	color: #fff;
+	list-style: none;
+}
+
+.menuLink {
+	margin: 20px 0px 20px 10px;
+	font-size: .75em;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+/********************************************************************************************************/
+/*************************************************/
+/**** End - Main Content CSS - Site Wide ****/
+/*************************************************/
+/********************************************************************************************************/
+
+/*************************************************/
+/**** Begin - <SECTION> HTML AREA Content CSS - Site Wide ****/
+/*************************************************/
+
+section h1 {
+    background-color: #2E3336;
+    color: #BDCEDC;
+    font-size: 0.75em;
+    height: 20px;
+    margin: 0 0 10px;
+    padding: 4px 0 0 5px;
+    letter-spacing:2px;
+}
+
+section h2 {
+    background-color: #2E3336;
+    border-radius: 2px 2px 2px 2px;
+    color: #BDCEDC;
+    font-size: 0.75em;
+    height: auto;
+    margin: 0 0 10px;
+    padding: 5px 0 5px 5px;
+}
+
+/**** Begin - <SECTION> Catergory Box Content CSS - Site Wide. FOR IE browsers < IE9+ ----- SEE SITEWIDE_SCRIPTS.JS ($('.boxH3bg, section h3')_****/
+section h3 {
+	background-color: #444B50;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom: 2px solid #86929C;
+    color: #ffffff;
+    font-size: 0.85em;
+    height: 28px;
+    line-height: 27px;
+    margin-bottom: 15px;
+    padding: 2px 0 0 14px;
+    width: auto;
+    letter-spacing:2px;
+}
+/**** End - Catergory Box Content CSS - Site Wide ****/
+
+section h4 {
+	margin:0px 15px 15px;
+}
+section ul {
+	margin: 0 10px 0 15px;
+}
+section li {
+	margin:0px 0px 5px 15px;
+	list-style:   square;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	list-style: square outside none;
+}
+
+section p {
+	margin:5px 0px 10px 15px;
+}
+section .spacer {
+	margin:0px 10px 0px 10px;
+}
+section ul li {
+	font-size: .75em;
+}
+/*************************************************/
+/**** Begin - <SECTION> HTML AREA Content CSS - Site Wide ****/
+/*************************************************/
+
+/*************************************************/
+/**** Begin - Footer Content CSS - Site Wide ****/
+/*************************************************/
+footer {
+	text-align: center;
+	width:960px;
+	height:auto;
+	color: #fff;
+	margin:0px auto 10px;
+	overflow:auto;
+	background-color:#000;
+}
+footer section:first-child {
+	margin: 20px 0 20px 10px;
+}
+footer section {
+	float:left;
+	height:auto;
+	margin: 20px 0;
+	text-align: left;
+	vertical-align: top;
+	width: 300px;
+}
+.footMid {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+footer section li {
+	list-style:   none;
+	margin:0px 10px 5px 0px;
+	color:#fff;
+}
+footer .socialLinks {
+	margin: 0 5px;
+    text-align: left;
+    width: 300px;
+}
+footer .socialLinks li {
+	display: inline-block;
+	margin-right:5px;
+}
+footer .socialLinks li a{
+	display: block;
+}
+/*************************************************/
+/**** End - Footer Content CSS - Site Wide ****/
+/*************************************************/
+/*************************************************/
+/**** Begin - Copyright/browser compatibility Box Content CSS - Site Wide ****/
+/*************************************************/
+#copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	padding: 2px 0px 2px 0px;
+	width:955px;
+	margin:0 auto;
+	color: #999999;
+}
+/*************************************************/
+/**** Begin - Copyright/browser compatibility Box Content CSS - Site Wide ****/
+/*************************************************/
+
+
+
+.img-title {
+	margin:10px 0px 0px 10px;
+}
+.collectlink {
+	margin: 15px 0px 15px 20px;
+}
+.icon {
+	margin: 4px 3px 0px 3px;
+}
+.imageFloat1 {
+	float: left;
+	margin: 3px 10px 0px 0px;
+	border: #A09168 2px solid;
+}
+.imageFloat2 {
+	float: left;
+	margin: 3px 10px 50px 0px;
+}
+
+.imageFloat3 {
+	margin: 3px auto;
+	width:272px;
+	border: #A09168 2px solid;
+	clear:both;
+}
+.imageLink img:hover {
+	border: #BB8444 2px solid;
+}
+/*.imageLink img {
+	width:120px;
+	height:180px;
+	overflow:hidden;
+}*/
+.btnTitle {
+	font-weight: bold;
+	font-family:  Arial, Helvetica, sans-serif;
+	padding:2px 0px 3px 0px;
+	font-size: 1.25em;
+}
+/*************************************************/
+/**** Begin - FORM FORMATING
+ CSS - Site Wide ****/
+/*************************************************/
+input[type="text"], textarea {
+	border: 1px solid #898989;
+	/*font-size: 0.75em;*/
+    font-style: italic;
+	vertical-align: top;
+}
+.dlrSearchTxtBox {
+	height: 15px;
+	width: 138px;
+}
+select, textarea {
+	border: 1px solid #898989;
+	vertical-align:top
+}
+input:focus, select:focus, textarea:focus {
+	border-color:#F88F1E;
+}
+.contactAgForm {
+	margin: 20px 0px 20px 0px;
+}
+.contactAgForm li {
+	position:relative;
+	margin-bottom:20px;
+}
+.contactAgForm input.zip, .contactAgForm input.city {
+	height:25px;
+	width: 272px;
+}
+.installDocs {
+	margin: 10px 0 10px 15px;
+}
+
+.installDocs li {
+	list-style:none;
+	margin: 0px 0px 5px 0px;
+}
+.featuresUL1 {
+	margin: 5px 0 5px 20px;
+}
+.featuresUL1 li {
+	margin: 0 0 5px 0px;
+	list-style:disc;
+}
+.contactTextBox {
+	height: 263px;
+	width: 418px;
+}
+table {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+	margin: 10px 0px 20px 0px;
+}
+.weightTable {
+	border:1px solid #5A5E4D;
+	border-collapse:collapse;
+}
+.weightTable th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+	background-color:#EFEADD;
+	padding:5px 3px 5px 3px;
+	border:1px solid #5A5E4D;
+}
+.weightTable td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	padding:3px;
+	text-align:center;
+	border:1px dotted #5A5E4D;
+}
+.instalDocsTxt {
+	font-size: .9em;
+}
+.ag-ui-icon {
+}
+
+.glassFilter {
+	/*margin:10px 0px 0px 20px;*/
+}
+
+.glassFilter li{
+	display:inline;
+	font-size: 0.75em;
+	font-weight:bold;
+	vertical-align:bottom;
+}
+
+.glassFilter li a{
+	/*text-decoration:underline;*/
+}
+.glassFilter li a:hover{
+	text-decoration:underline;
+	color: #333;
+	
+}
+.this-page { color: #666;}
+.glassThickness { margin: 10px 0px 10px 0px;}
+
+.button {
+	font-family: Arial;
+	font-weight:bold;
+	color: #000000;
+	font-size: 12px;
+	padding: 1px 7px;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 3px #666666;
+	-moz-box-shadow: 0px 1px 3px #666666;
+	text-shadow: 0px 1px 0px #cccccc;
+	border: solid #999999 1px;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#666666));
+	background: -moz-linear-gradient(top, #ffffff, #666666);
+ -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffffff, endColorStr=#666666);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#ffffff, endColorStr=#666666);
+	display:inline-block; /* IE is so silly */
+}
+.button:hover {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#cccccc), to(#ffffff));
+ 	background: -moz-linear-gradient(top, #cccccc, #ffffff);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#666666);
+}
+
+.modeLogo {
+	margin: 12px 0 0 10px;
+}
+
+.pdfImgUpload {
+	width: 100px;
+	height: auto;
+}
+
+.error {
+	color:#FD0100;
+	font-weight: bold;	
+}
+
+
+
+

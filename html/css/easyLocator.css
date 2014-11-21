@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+#EasyLocatorWrapper { margin-bottom:10px;}
+
+div#map {
+    width: 600px !important;
+    height: 465px !important;
+}
+
+#container {
+    margin: 0 auto;
+    min-height: 450px;
+    padding: 0;
+    position: relative;
+    width: inherit;
+}
+
+#wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#box1 {
+    background-color: #D5C9B7;
+    display: block;
+    float: left;
+    min-height: 500px;
+    position: relative;
+    width: 625px;
+    border-top: 6px solid #493D3C;
+}
+
+#box2 {
+    background-color: #2E2326;
+    margin: 0 0 20px;
+    min-height: 500px;
+    position: relative;
+    width: 300px;
+}
+
+#map_canvas {
+    height: auto;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.fieldwrap {
+    margin: 10px;
+    overflow: auto;
+    padding-bottom: 0;
+    width: 605px;
+}
+#frmsearch input.fmtext {
+    float: left;
+    font-size: 16px;
+    width: 500px;
+}
+
+#frmsearch input.fmtext {
+    width: 485px;
+}
+
+#plug {
+    color: #000000;
+    font-size: 8px;
+    padding: 3px 0 0 11px;
+}
+
+#results_header {
+    background-color: #493D3C;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    font-size: 1.25em;
+    font-weight: bold;
+    height: 38px;
+    line-height: 28px;
+    padding: 12px 0 0 14px;
+}
+
+.result {
+    border-bottom: 1px dashed #D5C9B7;
+}
+
