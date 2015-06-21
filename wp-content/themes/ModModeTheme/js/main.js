@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
 
 
 	var carouselContainer = jQuery('.carousel');
-	var slideInterval = 8000;
+	var slideInterval = 4500; //8000
 
 	function toggleCaption() {
 	    jQuery('.carousel-caption').hide();
