@@ -38,6 +38,16 @@ jQuery(document).ready(function() {
 	    cycle: true,
 	    pause: "hover"
 	}).on('slid slide', toggleCaption).trigger('slid');
+	
+	/* ==============================================
+	 Modernizer Older browser support - SVG to PNG image swap
+	 =============================================== */
+	
+	if (!Modernizr.svg) {
+		jQuery('img[src*="svg"]').attr('src', function() {
+			return jQuery(this).attr('src').replace('.svg', '.png');
+		});
+	}
 
 });
 /**************************************************************
@@ -48,6 +58,7 @@ jQuery('img').each(function(){
    jQuery(this).removeAttr('width');
    jQuery(this).removeAttr('height');
 });
+
 
 
 

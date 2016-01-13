@@ -15,11 +15,24 @@ body {
   font-family: @font-family-sans-serif;
   }
 
+
+.company-logo {
+    max-width: 420px;
+    width: 100%;
+}
+
 /*********************************
  * Header Area
  ********************************/
 .navbar {
   margin-bottom: 0;
+  	a.logo-link {
+	    float: left;
+	}
+}
+
+.navbar-toggle {
+    margin:15px 0 0;
 }
 
 /*********************************
@@ -61,6 +74,36 @@ body.page {
 /*********************************
  * Featurette row styles
  ******************************/
+
+.img-center-block {
+    overflow: auto;
+    width: 100%;
+}
+
+.row.acf-featurette {
+    border-bottom: 1px solid #ededed;
+    padding-bottom:6em;
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.acf-label, .acf-desc, .acf-link{
+    overflow: auto;
+    width: 100%;
+}
+
+.acf-label .img-responsive {
+    max-width: 375px;
+    //width: 100%
+}
+
+.acf-desc {
+    margin-bottom: 2em;
+     .lead {
+	    font-weight: 400;
+	}
+}
+
 .row.featurette {
     border-bottom: 1px solid #ededed;
     padding-bottom:3em;
@@ -454,9 +497,17 @@ footer {
  * Widget Styling 
  ***********************************************/
 .widget-area {
+	ul.socialLinks {
+	    max-width: 230px;
+	    padding: 1em 0;
+	    margin: 0px auto;
+	}
   	ul {
       	margin: 0;
-      	padding: 0;
+	    padding: 0;
+	    overflow: auto;
+	    display: table;
+	    width: 100%;
   	}
   	h3 {
 		margin-top: 10px;
@@ -466,8 +517,8 @@ footer {
     	overflow: auto;
     	width: 100%;
     	.widget {
-    		overflow: auto;
-      		float: left;
+    		//overflow: auto;
+      		//float: left;
 		}
   	}
   	footer {
@@ -479,8 +530,7 @@ footer {
 
 .socialLinks {
   li {
-    float: left;
-    margin-right: 1em;
+    display: table-cell;
   }
 }
 //320
@@ -556,6 +606,11 @@ footer {
 	body .cta_widget.widget-text.wp_widget_plugin_box {
 	    min-height: inherit;
 	}
+	
+	.company-logo {
+	    margin-top: 5px;
+	}
+
 }
 
 @media (max-width: 640px) {
@@ -565,6 +620,28 @@ footer {
   .col-md-7.content-col-main-odd {
       float: none !important;
   }
+	.row.acf-featurette {
+	    text-align: center;
+	    .content-col-main {
+	    	margin-bottom: 3em;
+	    }
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-7.col-md-7.content-col-main {
+	    text-align: center;
+	    margin-bottom: 2em;
+	}
+	.col-sm-7.col-md-7.content-col-main-odd {
+    	margin-bottom: 2em;
+	}
+}
+
+@media (min-width: 768px) {
+	.acf-label .img-responsive {
+	    float: left;
+	}
+
 
 }
 
@@ -583,9 +660,6 @@ footer {
   	body.page {
 	  	margin-top: auto;
 	}
-//	.container {
-//   		width: 100%;
-// 	}
  	.page-header {
 	    margin: 1em 0;
 	    padding-bottom: 0.643em;
@@ -597,9 +671,12 @@ footer {
 		    padding: 1% 5%;
 		}
 	}
-// 	.container {
-//   		width: 100%;
-// 	}
+	div#footer-widgets {
+	    text-align: center;
+	}
+	.acf-label .img-responsive {
+	    width: 100%
+	}
 }
 @media (min-width: 1024px) {
 

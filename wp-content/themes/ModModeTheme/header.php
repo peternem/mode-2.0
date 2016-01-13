@@ -34,8 +34,8 @@
 		            <span class="icon-bar"></span>
 				</button>
 	        <div class="navbar-header">
-	        	<a href="<?php echo get_option('home'); ?>/" rel="home" class="">
-	            	<img src="http://modedistributing.com/wp-content/uploads/2013/11/mode-distributing-logo.jpg" alt="ModeDistributing.com" title="ModeDistributing.com" class="img-responsive" />
+	        	<a href="<?php echo get_option('home'); ?>/" rel="home" class="logo-link">
+	            	<img src="/wp-content/uploads/2016/01/mode-logo-teal-grey.svg" alt="ModeDistributing.com" title="ModeDistributing.com" class="img-responsive company-logo" />
 	            </a> 
 	        </div>
 			<?php 

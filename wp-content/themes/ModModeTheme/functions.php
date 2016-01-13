@@ -73,6 +73,8 @@ add_action( 'widgets_init', 'upbootwp_widgets_init' );
 function upbootwp_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/css/bootstrap.css', array(), '20130908');
 	wp_enqueue_style( 'customized-bootstrap', get_template_directory_uri().'/css/customize-bootstrap.css', array(), '20130908');
+	// Add Modernizr for better HTML5 and CSS3 support
+	wp_enqueue_script('upbootwp-modernizr', get_template_directory_uri().'/js/modernizr.min.js', array('jquery'), $ver , false);
 	wp_enqueue_script( 'upbootwp-jQuery', get_template_directory_uri().'/js/jquery.js',array(),'2.0.3',true);
 	wp_enqueue_script( 'upbootwp-basefile', get_template_directory_uri().'/js/bootstrap.min.js',array(),'20130905',true);
 	wp_enqueue_script( 'upbootwp-main-js', get_template_directory_uri().'/js/main.js',array(),'2.1',true);
@@ -93,6 +95,22 @@ function upbootwp_less() {
 // Enable this when you want to work with less
 //add_action('wp_head', 'upbootwp_less');
 
+/*--------------------------------------*/
+/* Add SVG Support to media library
+ /*--------------------------------------*/
+
+function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+// Add SVG Thumbnails to media library grid
+
+function custom_admin_head() {
+	$css = '';
+	$css = 'td.media-icon img[src$=".svg"] { width: 100% !important; height: auto !important; }';
+	echo '<style type="text/css">'.$css.'</style>';
+}
 
 
 /**
@@ -232,7 +250,7 @@ register_sidebar( array(
 	'name' => __( 'Global Footer 1', 'tto' ),
 	'id' => 'sidebar-4',
 	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Left Side.', 'tto' ),
-	'before_widget' => '<aside id="%1$s" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 widget %2$s">',
+	'before_widget' => '<aside id="%1$s" class="col-md-3 col-lg-3 widget %2$s">',
 	'after_widget' => '</aside>',
 	'before_title' => '<h3 class="widget-title">',
 	'after_title' => '</h3>',
@@ -242,7 +260,7 @@ register_sidebar( array(
 	'name' => __( 'Global Footer 2', 'tto' ),
 	'id' => 'sidebar-5',
 	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Center.', 'tto' ),
-	'before_widget' => '<aside id="%1$s" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 widget %2$s">',
+	'before_widget' => '<aside id="%1$s" class="col-md-3 col-lg-3 widget %2$s">',
 	'after_widget' => "</aside>",
 	'before_title' => '<h3 class="widget-title">',
 	'after_title' => '</h3>',
@@ -252,7 +270,7 @@ register_sidebar( array(
 	'name' => __( 'Global Footer 3', 'tto' ),
 	'id' => 'sidebar-6',
 	'description' => __( 'Found at the bottom of every page (except 404s, optional homepage and full width) as the footer. Right Side.', 'tto' ),
-	'before_widget' => '<aside id="%1$s" class="col-xs-12 col-sm-6 col-md-3 col-lg-3 widget %2$s">',
+	'before_widget' => '<aside id="%1$s" class="col-md-3 col-lg-3 widget %2$s">',
 	'after_widget' => "</aside>",
 	'before_title' => '<h3 class="widget-title">',
 	'after_title' => '</h3>',

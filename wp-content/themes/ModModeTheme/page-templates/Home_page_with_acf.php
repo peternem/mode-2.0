@@ -24,7 +24,6 @@ get_header(); ?>
 	        <li data-target="#myCarousel" data-slide-to="7"></li>
 	        <li data-target="#myCarousel" data-slide-to="8"></li>
 	    	<li data-target="#myCarousel" data-slide-to="9"></li>
-	    	<li data-target="#myCarousel" data-slide-to="10"></li>
 	    </ol>
 		<div class="carousel-inner">
 	        <div class="item active">
@@ -142,22 +141,6 @@ get_header(); ?>
 	          	</div>
 	        </div>
 	        <div class="item">
-	          	<img src="<?php get_site_url(); ?>/wp-content/uploads/2014/06/mode_amer_range_hero_image_3.jpg" alt="American Range" class="img-responsive">
-	          	<div class="container">
-	            	<div class="carousel-caption">
-	                	<div class="row">
-					  		<div class="col-xs-9 col-sm-10 col-md-10">
-					  			<h1>American Range</h1>
-	              				<p>Inspired by a passion for perfection of the residential home range.</p>
-					  		</div>
-					  		<div class="col-xs-3 col-sm-2 col-md-2">
-					  			<div class="btn-group"><a class="btn btn-sm btn-primary" href="<?php get_site_url(); ?>/product/american-range/" role="button">Visit Page &raquo;</a></div>
-					  		</div>
-						</div>
-	            	</div>
-	          	</div>
-	        </div>
-	        <div class="item">
 	          	<img src="<?php get_site_url(); ?>/wp-content/uploads/2014/10/mode_verona_hero_image_1.jpg" alt="Verona" class="img-responsive">
 	          	<div class="container">
 	            	<div class="carousel-caption">
@@ -224,65 +207,7 @@ get_header(); ?>
 		</div>
 		<div class="row entry-content marketing">
 			<div class="col-md-12">		
-					<?php
- 					// Advanced Custom Fieldset - Featurette
-					if(get_field('intro_paragraph'))
-					{
-						echo get_field('intro_paragraph');
-						echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_a'))
-					{
-						echo get_field('featurette_a');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
 					
-					if(get_field('featurette_b'))
-					{
-						echo get_field('featurette_b');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_c'))
-					{
-						echo get_field('featurette_c');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_d'))
-					{
-						echo get_field('featurette_d');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_e'))
-					{
-						echo get_field('featurette_e');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_f'))
-					{
-						echo get_field('featurette_f');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_g'))
-					{
-						echo get_field('featurette_g');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_h'))
-					{
-						echo get_field('featurette_h');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_i'))
-					{
-						echo get_field('featurette_i');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					if(get_field('featurette_j'))
-					{
-						echo get_field('featurette_j');
-						//echo "<hr class=\"featurette-divider\" />";
-					}
-					?>
 					<?php the_content(); ?>
 					<?php endwhile; // end of the loop. ?>
 					<?php
@@ -291,9 +216,46 @@ get_header(); ?>
 							'after'  => '</div>',
 						));
 					?>
-					<?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+					
 			</div>
 		</div>
+		<?php if(have_rows('home_flex_content')) { ?>
+			<?php $postx_counter = 0; ?>
+			<?php while( have_rows('home_flex_content') ): the_row(); 
+			$postx_counter++;
+			$vendor_logo = get_sub_field('vendor_logo');
+			$vendor_subtitle = get_sub_field('vendor_subtitle');
+			$vendor_details = get_sub_field('vendor_details');
+			$image = get_sub_field('image');
+			$link = get_sub_field('link');
+			
+			if (($postx_counter % 2)==0) {
+				echo '<div class="row acf-featurette even" data-post="'. $postx_counter .'">';
+			
+			} else {
+				echo '<div class="row acf-featurette odd" data-post="'. $postx_counter .'">';
+			
+			}
+			?>
+			<div class="col-sm-7 col-md-7 <?php echo $x = $postx_counter % 2==0 ? 'content-col-main-odd' : 'content-col-main'; ?>">
+				<div class="acf-label"><img class="img-responsive" src="<?php echo $vendor_logo['url']; ?>" alt="<?php echo $vendor_logo['alt'] ?>" /></div>
+			     <div class="acf-desc">
+			     	<h3 class="featurette-heading"><?php echo $vendor_subtitle; ?></h3>
+			     	<p class="lead"><?php echo $vendor_details; ?></p>
+			    </div>
+			    <div class="acf-link">
+			    	<?php if ($link) { ?>
+			    	<p><a class="btn btn-primary" href="<?php echo $link; ?>" title="View details">Learn More »</a></p>
+			    	<?php }?>
+			    </div>
+			</div>
+			<div class="col-sm-5 col-md-5 <?php echo $x = $postx_counter % 2==0 ? 'content-col-side-odd' : 'content-col-side'; ?>">
+				<img class="img-thumbnail aga-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+			</div>
+				
+			</div>
+			<?php endwhile; ?>
+		<?php } ?>
 		<div class="row marketing">
 			<div id="footer-widgets" class="col-md-12 widget-area four">
 			<!-- Three columns of text below the carousel -->
