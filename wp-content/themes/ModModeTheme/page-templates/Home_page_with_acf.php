@@ -114,11 +114,11 @@ get_header(); ?>
 	            <div class="carousel-caption">
 	            	<div class="row">
 					  	<div class="col-xs-9 col-sm-10 col-md-10">
-					  		<h1>Caliber</h1>
+					  		<h1>Caliber Appliances</h1>
 					  		<p>Outstanding culinary design and elegant engineering for your outdoor collection.</p>
 					  	</div>
 					  	<div class="col-xs-3 col-sm-2 col-md-2">
-					  		<div class="btn-group"><a class="btn btn-sm btn-primary" href="<?php get_site_url(); ?>/product/caliber/" role="button">Visit Page &raquo;</a></div>
+					  		<div class="btn-group"><a class="btn btn-sm btn-primary" href="<?php get_site_url(); ?>/product/caliber-appliances/" role="button">Visit Page &raquo;</a></div>
 					  	</div>
 					</div>
 	            </div>
